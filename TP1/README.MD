@@ -219,3 +219,5 @@ To set up the Big Data Lab environment, follow these steps:
         hadoop jar wordcount-1.jar tp1.WordCount input output
         
         ```
+Result:
+![alt text](https://imgur.com/sJMsbUW)
