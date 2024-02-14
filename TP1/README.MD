@@ -220,4 +220,4 @@ To set up the Big Data Lab environment, follow these steps:
         
         ```
 Result:
-![alt text](https://imgur.com/sJMsbUW)
+![result](https://github.com/Phues/Big-Data-Labs/blob/main/TP1/image.png)
