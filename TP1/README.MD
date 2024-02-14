@@ -57,7 +57,7 @@ To set up the Big Data Lab environment, follow these steps:
         
         ```
         
-        We will use the file "purchases.txt" as the input for the MapReduce processing. This file is already located in the main directory of your master machine.
+        We will use the file "purchases.txt" as the input for the MapReduce processing.
         
         - Load the "purchases" file into the "input" directory you created by running the following command:
             
@@ -66,9 +66,9 @@ To set up the Big Data Lab environment, follow these steps:
             
             ```
             
-            Create a Maven project with the required files, follow these steps:
+            Create a Maven project with the required files:
             
-            1. Open Intelij IDE  (using JDK 8)
+            1. Open Intelij IDE (using JDK 8)
             
             Install the required dependencies, add the following code to `pom.xml` file:
             
