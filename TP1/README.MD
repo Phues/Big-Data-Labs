@@ -221,3 +221,9 @@ To set up the Big Data Lab environment, follow these steps:
         ```
 Result:
 ![result](https://github.com/Phues/Big-Data-Labs/blob/main/TP1/image.png)
+
+## Python Version 
+ ```
+ hadoop jar hadoop-streaming-2.7.3.jar  -file ./mapper.py -mapper "python3 mapper.py" -file ./reducer.py -reducer "python3 reducer.py" -input input/purchases.txt -output pyout
+        
+ ```
