@@ -22,7 +22,7 @@ To set up the Big Data Lab environment, follow these steps:
     2. Create and launch the three containers. Use the `p` flag to map the host machine ports to the container ports:
         
         ```
-        docker run -itd --net=hadoop -p 50070:50070 -p 8088:8088 -p 7077:7077 -p 16010:16010 \\
+        docker run -itd --net=hadoop -p 50070:50070 -p 8088:8088 -p 8080:8080 \\
         --name hadoop-master --hostname hadoop-master \\
         liliasfaxi/spark-hadoop:hv-2.7.2
         
