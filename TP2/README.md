@@ -53,4 +53,4 @@ To set up the Big Data Lab environment, follow these steps:
 
 Result:
 
-![https://github.com/Phues/Big-Data-Labs/blob/main/TP2/image.png](https://github.com/Phues/Big-Data-Labs/blob/main/TP1/image.png)
+![https://github.com/Phues/Big-Data-Labs/blob/main/TP2/image.png](https://github.com/Phues/Big-Data-Labs/blob/main/TP2/image.png)
