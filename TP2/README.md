@@ -8,7 +8,7 @@ To set up the Big Data Lab environment, follow these steps:
 
 1. Use the images from the previous lab.
 2. Add the slaves `spark-slave1` and
-`spark-slave2` at `'cd /usr/local/spark/conf'`
+`spark-slave2` at `cd /usr/local/spark/conf`
 (can be done using `vim slaves`)
 3. Enter the master container to start using it:
     
@@ -40,9 +40,9 @@ To set up the Big Data Lab environment, follow these steps:
     
     ```
     
-    Add the `count _lines.py` and `arbres.csv` to master image file.
+    Add the `count_lines.py` and `arbres.csv` to master image file.
     
-    Add the `arbres.cs` to HDFS so it can be treated by slave nodes
+    Add the `arbres.csv` to HDFS so it can be treated by slave nodes
     
     `hadoop fs -put arbres.csv`
     
