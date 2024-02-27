@@ -40,17 +40,16 @@ To set up the Big Data Lab environment, follow these steps:
     
     ```
     
-    Add the `count_lines.py` and `arbres.csv` to master image file.
+    Add the `<program_name>.py` and `arbres.csv` to master image file.
     
     Add the `arbres.csv` to HDFS so it can be treated by slave nodes
     
     `hadoop fs -put arbres.csv`
     
-    Run the python program:
+    To run the python program in cluser mode:
     
-    `spark-submit --master spark://hadoop-master:7077 count_lines.py`
-    
+    `spark-submit --master spark://hadoop-master:7077 <program_name>.py --output > /root/<file_name>`
 
-Result:
+    To run the python program in local mode:
 
-![https://github.com/Phues/Big-Data-Labs/blob/main/TP2/image.png](https://github.com/Phues/Big-Data-Labs/blob/main/TP2/image.png)
+    `spark-submit --master local counts_lines_local.py --output > /root/<file_name>`
