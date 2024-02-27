@@ -42,7 +42,7 @@ Steps:
     
     Add the `<program_name>.py` and `arbres.csv` to master image file.
     
-    Add the `arbres.csv` to HDFS so it can be treated by slave nodes
+    Add the `arbres.csv` to HDFS so it can be treated by slave nodes:
     
     `hadoop fs -put arbres.csv`
     
@@ -52,4 +52,4 @@ Steps:
 
     To run the python program in local mode:
 
-    `spark-submit --master local counts_lines_local.py --output > /root/<file_name>`
+    `spark-submit --master local <programe_name>.py --output > /root/<file_name>`
