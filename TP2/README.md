@@ -4,13 +4,18 @@
 
 ## Big Data Lab 2
 
-To set up the Big Data Lab environment, follow these steps:
+Steps:
 
 1. Use the images from the previous lab.
 2. Add the slaves `spark-slave1` and
 `spark-slave2` at `cd /usr/local/spark/conf`
 (can be done using `vim slaves`)
-3. Enter the master container to start using it:
+3. Add the following line to `spark-env.sh` located at `/usr/local/spark/conf` to can execute python files:
+    ```
+    PYSPARK_PYTHON=/usr/bin/python3
+
+    ```
+4. Enter the master container to start using it:
     
     ```
     docker exec -it hadoop-master bash
