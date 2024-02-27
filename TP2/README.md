@@ -10,12 +10,7 @@ Steps:
 2. Add the slaves `spark-slave1` and
 `spark-slave2` at `/usr/local/spark/conf`
 (can be done using `vim slaves`)
-3. Add the following line to `spark-env.sh` located at `/usr/local/spark/conf` to execute python files:
-    ```
-    PYSPARK_PYTHON=/usr/bin/python3
-
-    ```
-4. Enter the master container to start using it:
+3. Enter the master container to start using it:
     
     ```
     docker exec -it hadoop-master bash
