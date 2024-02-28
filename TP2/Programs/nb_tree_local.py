@@ -8,10 +8,6 @@ sc = SparkContext(conf=conf)
 import os
 print(os.getcwd())
 
-#print all files under file:///root
-print(os.listdir('file:///root'))
-
-
 brut = sc.textFile("file:///root/arbres.csv")
 
 def parse_genre(line):
