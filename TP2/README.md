@@ -45,11 +45,14 @@ Steps:
     Add the `arbres.csv` to HDFS so it can be treated by slave nodes:
     
     `hadoop fs -put arbres.csv`
+
+    Add the `arbres.csv` to `hadoop-master` as well as `hadoop-slave1` and `hadoop-slave2`
+    ```
+    docker cp arbres.csv hadoop-master:/root/arbres.csv
+    docker cp arbres.csv hadoop-slave1:/root/arbres.csv
+    docker cp arbres.csv hadoop-slave2:/root/arbres.csv
+    ```
     
     To run the python program in cluser mode:
     
     `spark-submit --master spark://hadoop-master:7077 <program_name>.py --output > /root/<file_name>`
-
-    To run the python program in local mode:
-
-    `spark-submit --master local <programe_name>.py --output > /root/<file_name>`
