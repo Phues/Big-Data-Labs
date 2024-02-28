@@ -1,7 +1,7 @@
 from pyspark import SparkConf, SparkContext
 
 app = "TP2_3"
-conf = SparkConf().setAppName(app).setMaster('local[2]')
+conf = SparkConf().setAppName(app)
 sc = SparkContext(conf=conf)
 
 def parse_line(line):

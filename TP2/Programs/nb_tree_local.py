@@ -1,8 +1,16 @@
 from pyspark import SparkConf, SparkContext
 
 appName = "TP2_4"
-conf = SparkConf().setAppName(appName).setMaster('local[2]')
+conf = SparkConf().setAppName(appName)
 sc = SparkContext(conf=conf)
+
+#print current working directory
+import os
+print(os.getcwd())
+
+#print all files under file:///root
+print(os.listdir('file:///root'))
+
 
 brut = sc.textFile("file:///root/arbres.csv")
 

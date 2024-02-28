@@ -9,7 +9,7 @@ def parse_line(line):
         return None
 
 app = "tp2_2"
-conf = SparkConf().setAppName(app).setMaster('local[2]')
+conf = SparkConf().setAppName(app)
 sc = SparkContext(conf=conf)
 
 brut = sc.textFile("file:///root/arbres.csv")
