@@ -8,14 +8,9 @@ Steps:
 
 1. Use the images from the previous lab.
 2. Add the slaves `spark-slave1` and
-`spark-slave2` at `cd /usr/local/spark/conf`
+`spark-slave2` at `/usr/local/spark/conf`
 (can be done using `vim slaves`)
-3. Add the following line to `spark-env.sh` located at `/usr/local/spark/conf` to can execute python files:
-    ```
-    PYSPARK_PYTHON=/usr/bin/python3
-
-    ```
-4. Enter the master container to start using it:
+3. Enter the master container to start using it:
     
     ```
     docker exec -it hadoop-master bash
@@ -47,14 +42,17 @@ Steps:
     
     Add the `<program_name>.py` and `arbres.csv` to master image file.
     
-    Add the `arbres.csv` to HDFS so it can be treated by slave nodes
+    Add the `arbres.csv` to HDFS so it can be treated by slave nodes:
     
     `hadoop fs -put arbres.csv`
+
+    Add the `arbres.csv` to `hadoop-master` as well as `hadoop-slave1` and `hadoop-slave2`
+    ```
+    docker cp arbres.csv hadoop-master:/root/arbres.csv
+    docker cp arbres.csv hadoop-slave1:/root/arbres.csv
+    docker cp arbres.csv hadoop-slave2:/root/arbres.csv
+    ```
     
     To run the python program in cluser mode:
     
     `spark-submit --master spark://hadoop-master:7077 <program_name>.py --output > /root/<file_name>`
-
-    To run the python program in local mode:
-
-    `spark-submit --master local counts_lines_local.py --output > /root/<file_name>`
