@@ -7,8 +7,8 @@
 Steps:
 
 1. Use the images from the previous lab.
-2. Add the slaves `spark-slave1` and
-`spark-slave2` at `/usr/local/spark/conf`
+2. Add the slaves `hadoop-slave1` and
+   `hadoop-slave2` at `/usr/local/spark/conf`
 (can be done using `vim slaves`)
 3. Enter the master container to start using it:
     
