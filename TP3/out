@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/root/TP3/tp3.py", line 15, in <module>
+    sc = SparkContext(conf=conf)
+  File "/usr/local/spark/python/lib/pyspark.zip/pyspark/context.py", line 115, in __init__
+  File "/usr/local/spark/python/lib/pyspark.zip/pyspark/context.py", line 299, in _ensure_initialized
+ValueError: Cannot run multiple SparkContexts at once; existing SparkContext(app=Our First Spark Example, master=spark://hadoop-master:7077) created by getOrCreate at /root/TP3/tp3.py:11 
