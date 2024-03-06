@@ -22,12 +22,19 @@ Steps:
     
     ```
 
-4. Add the `tp3.py` and `ngram.csv` to master image file.
+4. Start the Spark services:
     
-5. Add the `ngram.csv` to HDFS:
+    ```bash
+    cd /usr/local/spark/sbin/
+    ./start-all.sh
+    ```
+
+5. Add the `tp3.py` and `ngram.csv` to master image file.
     
-   `hadoop fs -put arbres.csv`
+6. Add the `ngram.csv` to HDFS:
     
-6. Run the python program:
+   `hadoop fs -put ngram.csv`
+    
+7. Run the python program:
     
    `spark-submit --master spark://hadoop-master:7077 tp3.py out`
